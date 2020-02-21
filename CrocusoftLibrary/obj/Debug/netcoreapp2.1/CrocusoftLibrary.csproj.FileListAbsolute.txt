@@ -17,7 +17,10 @@ D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\C
 D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\CrocusoftLibrary.TagHelpers.output.cache
 D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\CrocusoftLibrary.RazorCoreGenerate.cache
 D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Employee\ChangePassword.cshtml.g.cs
+D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Employee\Create.cshtml.g.cs
+D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Employee\Delete.cshtml.g.cs
 D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Employee\List.cshtml.g.cs
+D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Employee\Update.cshtml.g.cs
 D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.cshtml.g.cs
 D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Home\Register.cshtml.g.cs
 D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -29,7 +32,3 @@ D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\C
 D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\CrocusoftLibrary.dll
 D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\CrocusoftLibrary.pdb
 D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\CrocusoftLibrary.csproj.CopyComplete
-D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\CrocusoftLibrary.csprojAssemblyReference.cache
-D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Employee\Create.cshtml.g.cs
-D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Employee\Delete.cshtml.g.cs
-D:\Programming\Other\CrocusoftLibrary\CrocusoftLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Employee\Update.cshtml.g.cs

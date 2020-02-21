@@ -8,10 +8,11 @@
           content="">
     <meta name="author" content="Kamal Quliyev">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crocusoft Library veb portalının idarəetmə bölməsi</title>
+    <title>"Crocusoft Library" veb portalının idarəetmə bölməsi</title>
     <script src="https://kit.fontawesome.com/8fa1777ed8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="~/assets/fonts/UniSans/stylesheet.css" rel="stylesheet">
     <link rel="stylesheet" href="~/assets/css/style.css">
 </head>
 
@@ -21,7 +22,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h6>Crocusoft Library veb portalının idarəetmə bölməsi yalnız böyük ekranlar üçün nəzərdə tutulub</h6>
+                    <h6>"Crocusoft Library" veb portalının idarəetmə bölməsi yalnız böyük ekranlar üçün nəzərdə tutulub</h6>
                 </div>
             </div>
         </div>
@@ -42,7 +43,7 @@
                     <div class="top-menu">
                         <ul class="nav pull-right top-menu">
                             <li><a asp-controller="Employee" asp-action="ChangePassword" class="btn btn-success text-white">Şifrəni dəyiş</a></li>
-                            <li><a asp-controller="Employee" asp-action="Logout" class="btn btn-primary text-white">Hesabdan çıx</a></li>
+                            <li><a asp-controller="Employee" asp-action="Logout" class="btn text-white" style="background:#424a5d">Hesabdan çıx</a></li>
                         </ul>
                     </div>
                 </div>
@@ -54,11 +55,11 @@
             <div id="sidebar" class="nav-collapse ">
                 <ul class="sidebar-menu" id="nav-accordion">
                     @*<li>
-                        <a class="">
-                            <i class="fa fa-dashboard"></i>
-                            <span>Ana səhifə</span>
-                        </a>
-                    </li>*@
+                            <a class="">
+                                <i class="fa fa-dashboard"></i>
+                                <span>Ana səhifə</span>
+                            </a>
+                        </li>*@
 
                     <li class="sub-menu">
                         <a class="" asp-controller="Employee" asp-action="List">
@@ -66,19 +67,19 @@
                             <span>İşçilər</span>
                         </a>
                         @*<ul class="sub">
-                            <li>
-                                <a asp-controller="Employee" asp-action="List">
-                                    <i class="fas fa-list-ul"></i>
-                                    <span>Siyahı</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a asp-controller="Employee" asp-action="Create">
-                                    <i class="fas fa-plus"></i>
-                                    <span>Yeni işçi</span>
-                                </a>
-                            </li>
-                        </ul>*@
+                                <li>
+                                    <a asp-controller="Employee" asp-action="List">
+                                        <i class="fas fa-list-ul"></i>
+                                        <span>Siyahı</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Employee" asp-action="Create">
+                                        <i class="fas fa-plus"></i>
+                                        <span>Yeni işçi</span>
+                                    </a>
+                                </li>
+                            </ul>*@
                     </li>
                 </ul>
             </div>
@@ -112,7 +113,7 @@
 
     <script src="~/assets/js/jQueryConnection.js"></script>
     @RenderSection("scripts", required: false)
+    @RenderSection("scriptsTablePaginationSortingSearch", required: false)
     <script src="~/assets/js/main.js"></script>
 </body>
-
 </html>

@@ -13,10 +13,11 @@
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="~/assets/fonts/UniSans/stylesheet.css" rel="stylesheet">
     <link href="~/assets/css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="body-login-register">
     <!-- FOR SMALL SCREEN section start -->
     <section id="for-small-screen">
         <div class="container">
@@ -32,7 +33,7 @@
     <section id="admin-login">
         <div class="container py-5 vh-100">
             <div class="my-5 py-5">
-                <h3 class="text-center py-5">Crocusoft Library - Hesaba giriş</h3>
+                <h3 class="text-center py-5">"Crocusoft Library" - Hesaba giriş</h3>
                 @if(TempData["Registered"] != null)
                 {
                     <p class="text-center text-success">Qeydiyyatdan uğurla keçdiniz !</p>
@@ -52,7 +53,7 @@
                         <input asp-for="RememberMe" class="form-group m-0 ml-2" />
                     </div>
                     <div class="col-6 mt-2 d-flex flex-column align-items-center">
-                        <input type="submit" class="form-group w-75 btn btn-primary" value="Daxil ol">
+                        <input type="submit" class="form-group w-75 btn text-white custom-btn" value="Daxil ol">
                     </div>
                     <div class="col-6 mt-3 d-flex flex-column align-items-center">
                         <a asp-controller="Home" asp-action="Register" class="form-group w-75 btn btn-success text-white">

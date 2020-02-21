@@ -4,9 +4,23 @@
 body {
     color: #797979;
     background: #f2f2f2;
-    font-family: 'Maven Pro Light 300';
+    font-family: 'Uni Sans';
     padding: 0px !important;
     margin: 0px !important;
+}
+
+.body-login-register {
+    background: rgb(66,74,93);
+    background: linear-gradient(0deg, rgba(66,74,93,.3) 0%, rgba(255,255,255,1) 100%);
+}
+
+.custom-btn {
+    background: #424a5d!important;
+    transition: all .1s ease-in-out!important
+}
+
+.custom-btn:hover {
+    background: #343c4d !important
 }
 
 ul li {
@@ -1029,7 +1043,7 @@ ul.top-menu > li > a {
 }
 
     #main-content .announcement-delete-container-col p {
-        font-family: "Maven Pro Light 300";
+        font-family: "Uni Sans";
         font-size: 25px;
         text-align: center;
         color: white;
@@ -1069,7 +1083,7 @@ ul.top-menu > li > a {
     outline: none;
     text-indent: 5px;
     color: rgb(99, 91, 91);
-    font-family: 'Maven Pro Light 300';
+    font-family: 'Uni Sans';
     font-size: 15px;
     background-color: white;
 }

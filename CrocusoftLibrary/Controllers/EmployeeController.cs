@@ -114,6 +114,9 @@ namespace CrocusoftLibrary.Controllers
                 return NotFound();
             }
 
+            string activeUserName = User.Identity.Name;
+            string oldUserName = customUserFromDb.UserName;
+
             customUserFromDb.FirstName = customUser.FirstName;
             customUserFromDb.LastName = customUser.LastName;
             customUserFromDb.Age = customUser.Age;
@@ -121,10 +124,15 @@ namespace CrocusoftLibrary.Controllers
 
             IdentityResult result = await _userManager.UpdateAsync(customUserFromDb);
 
-            if(!result.Succeeded)
+            if (!result.Succeeded)
             {
                 ModelState.AddModelError("", "Xəta baş verdi");
                 return View(customUser);
+            }
+
+            if(activeUserName == oldUserName)
+            {
+                await _signInManager.SignInAsync(customUserFromDb, true);
             }
 
             TempData["Updated"] = true;

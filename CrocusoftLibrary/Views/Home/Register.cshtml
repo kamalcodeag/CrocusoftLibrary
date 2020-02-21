@@ -13,10 +13,11 @@
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="~/assets/fonts/UniSans/stylesheet.css" rel="stylesheet">
     <link href="~/assets/css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="body-login-register">
     <!-- FOR SMALL SCREEN section start -->
     <section id="for-small-screen">
         <div class="container">
@@ -32,7 +33,7 @@
     <section id="admin-login">
         <div class="container py-5 vh-100">
             <div class="my-5 py-5">
-                <h3 class="text-center py-5">Crocusoft Library - Qeydiyyat</h3>
+                <h3 class="text-center pb-5">"Crocusoft Library" - Qeydiyyat</h3>
                 <form asp-controller="Home" asp-action="Register" method="post" class="row d-flex flex-column align-items-center">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="col-6 d-flex flex-column align-items-center">
@@ -60,7 +61,7 @@
                         <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                     </div>
                     <div class="col-6 mt-2 d-flex flex-column align-items-center">
-                        <input type="submit" class="form-group w-75 btn btn-primary" value="Qeydiyyatdan keç">
+                        <input type="submit" class="form-group w-75 btn text-white custom-btn" value="Qeydiyyatdan keç">
                     </div>
                     <div class="col-6 mt-3 d-flex flex-column align-items-center">
                         <a asp-controller="Home" asp-action="Login" class="form-group w-75 btn btn-success text-white">

@@ -24,12 +24,13 @@
     @if (ViewBag.IsAdminRole == 1)
     {
         <div class="col-12 mb-5">
-            <a asp-controller="Employee" asp-action="Create" class="btn btn-primary w-100 text-white">Yeni işçi yarat</a>
+            <a asp-controller="Employee" asp-action="Create" class="btn w-100 text-white custom-btn">Yeni işçi yarat</a>
         </div>
     }
     <div class="col-12">
-        <table class="table table-hover table-bordered">
-            <thead class="thead-dark">
+        <input type="text" id="search-employees" class="form-group w-25 mb-4" placeholder="Axtar...">
+        <table id="table-employees" class="table-employees table table-hover table-bordered">
+            <thead class="">
                 <tr>
                     <th>Ad</th>
                     <th>Soyad</th>
@@ -66,3 +67,68 @@
         </table>
     </div>
 </div>
+
+@section scriptsTablePaginationSortingSearch
+{
+    <script src="~/assets/js/sorting-filtering-pagination-fancytable/src/fancyTable.js"></script>
+    <script>
+        //Pagination and sorting section
+        $(".table-employees").fancyTable({
+            sortColumn: 0,// column number for initial sorting
+            sortOrder: 'descending',// 'desc', 'descending', 'asc', 'ascending', -1 (descending) and 1 (ascending)
+            sortable: true,
+            pagination: true,// default: false
+            searchable: true,
+            globalSearch: true,
+            globalSearchExcludeColumns: [2, 5]// exclude column 2 & 5
+        });
+
+        $(".table-employees").fancyTable({
+            pagination: false,
+            paginationClass: "btn btn-light",
+            paginationClassActive: "active",
+            pagClosest: 3,
+            perPage: 5,
+        });
+
+        $(".table-employees").fancyTable({
+            inputStyle: "",
+            inputPlaceholder: "Search..."
+        });
+
+        $(".table-employees").fancyTable({
+            onInit: function () {
+                // do something
+            },
+        });
+
+        //Make #1 pagination button clicked
+        $('.pag a[data-n="1"]').click();
+
+        //Search section
+        var inputValue, tr, tdValue;
+        tr = $("#table-employees tbody tr");
+
+        $(document).on("keyup", "#search-employees", function ()
+        {
+            inputValue = $("#search-employees").val().toLowerCase();
+
+            for (var i = 0; i < tr.length; i++)
+            {
+                firstTdValue = tr.eq(i).children("td").eq(0).text().toLowerCase();
+                secondTdValue = tr.eq(i).children("td").eq(1).text().toLowerCase();
+                thirdTdValue = tr.eq(i).children("td").eq(2).text().toLowerCase();
+                fourthTdValue = tr.eq(i).children("td").eq(3).text().toLowerCase();
+
+                if (firstTdValue.indexOf(inputValue) > -1 || secondTdValue.indexOf(inputValue) > -1 || thirdTdValue.indexOf(inputValue) > -1 || fourthTdValue.indexOf(inputValue) > -1)
+                {
+                    tr.eq(i).css({"display": "" });
+                }
+                else
+                {
+                    tr.eq(i).css({"display": "none" });
+                }
+            }
+        })
+    </script>
+}
