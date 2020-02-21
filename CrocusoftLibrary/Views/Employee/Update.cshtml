@@ -1,0 +1,40 @@
+﻿@model CustomUser
+
+<div class="row">
+    <div class="col-12">
+        <h5 class="mb-5 text-center">İşçinin məlumatlarını yenilə</h5>
+        <form asp-controller="Employee" asp-action="Update" method="post" class="row d-flex flex-column align-items-center">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-6 d-flex flex-column align-items-center">
+                <input asp-for="FirstName" class="form-group w-75" placeholder="Ad" style="text-indent:10px;" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="col-6 d-flex flex-column align-items-center">
+                <input asp-for="LastName" class="form-group w-75" placeholder="Soyad" style="text-indent:10px;" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="col-6 d-flex flex-column align-items-center">
+                <input asp-for="Age" class="form-group w-75" placeholder="Yaş" style="text-indent:10px;" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+            <div class="col-6 d-flex flex-column align-items-center">
+                <input asp-for="UserName" class="form-group w-75" placeholder="İstifadəçi adı" style="text-indent:10px;" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="col-6 mt-2 d-flex flex-column align-items-center">
+                <input type="submit" class="form-group w-75 btn btn-primary" value="Təsdiqlə">
+            </div>
+            <div class="col-6 mt-3 d-flex flex-column align-items-center">
+                <a asp-controller="Employee" asp-action="List" class="form-group w-75 btn btn-success text-white">
+                    Geri qayıt
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section scripts
+{
+    <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

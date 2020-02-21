@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords"
+          content="">
+    <meta name="author" content="Kamal Quliyev">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crocusoft Library veb portalının idarəetmə bölməsi</title>
+    <script src="https://kit.fontawesome.com/8fa1777ed8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/assets/css/style.css">
+</head>
+
+<body>
+    <!-- FOR SMALL SCREEN section start -->
+    <section id="for-small-screen">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h6>Crocusoft Library veb portalının idarəetmə bölməsi yalnız böyük ekranlar üçün nəzərdə tutulub</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOR SMALL SCREEN section end -->
+
+
+
+
+    <section id="container">
+        <!--HEADER start-->
+        <header class="header black-bg d-flex align-items-center justify-content-between">
+            <div class="row w-100">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <h5 class="m-0">
+                        <strong>Crocusoft Library veb portalının idarəetmə bölməsi</strong>
+                    </h5>
+                    <div class="top-menu">
+                        <ul class="nav pull-right top-menu">
+                            <li><a asp-controller="Employee" asp-action="ChangePassword" class="btn btn-success text-white">Şifrəni dəyiş</a></li>
+                            <li><a asp-controller="Employee" asp-action="Logout" class="btn btn-primary text-white">Hesabdan çıx</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--HEADER end-->
+        <!-- SIDEBAR section start -->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <ul class="sidebar-menu" id="nav-accordion">
+                    @*<li>
+                        <a class="">
+                            <i class="fa fa-dashboard"></i>
+                            <span>Ana səhifə</span>
+                        </a>
+                    </li>*@
+
+                    <li class="sub-menu">
+                        <a class="" asp-controller="Employee" asp-action="List">
+                            <i class="fas fa-users"></i>
+                            <span>İşçilər</span>
+                        </a>
+                        @*<ul class="sub">
+                            <li>
+                                <a asp-controller="Employee" asp-action="List">
+                                    <i class="fas fa-list-ul"></i>
+                                    <span>Siyahı</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-controller="Employee" asp-action="Create">
+                                    <i class="fas fa-plus"></i>
+                                    <span>Yeni işçi</span>
+                                </a>
+                            </li>
+                        </ul>*@
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- SIDEBAR section end -->
+        <!--MAIN CONTENT section start-->
+        <section id="main-content" style="min-height:90vh;padding:100px 0px;">
+            <section class="container">
+                @RenderBody()
+            </section>
+        </section>
+        <!--MAIN CONTENT section end-->
+        <!--FOOTER start-->
+        <footer style="background-color:#68DFF0;">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-8 d-flex justify-content-end align-items-center">
+                        <span class="footer-copyright">
+                            @DateTime.Now.Year - Crocusoft Library by Kamal Guliyev
+                        </span>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!--FOOTER end-->
+    </section>
+
+    <script src="~/assets/js/jQueryConnection.js"></script>
+    @RenderSection("scripts", required: false)
+    <script src="~/assets/js/main.js"></script>
+</body>
+
+</html>
