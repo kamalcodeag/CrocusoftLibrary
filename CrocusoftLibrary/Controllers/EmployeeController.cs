@@ -67,6 +67,7 @@ namespace CrocusoftLibrary.Controllers
         [Authorize]
         public async Task<IActionResult> List()
         {
+            //Define an active user is in "Admin" role or not
             bool isAdminRole = await UserAndRole.IsAdminRole(_userManager, User.Identity.Name);
 
             if(isAdminRole == true)
@@ -114,8 +115,10 @@ namespace CrocusoftLibrary.Controllers
                 return NotFound();
             }
 
+            //Find an active username
             string activeUserName = User.Identity.Name;
-            string oldUserName = customUserFromDb.UserName;
+            //Find a username to be updated
+            string userNameToBeUpdated = customUserFromDb.UserName;
 
             customUserFromDb.FirstName = customUser.FirstName;
             customUserFromDb.LastName = customUser.LastName;
@@ -130,8 +133,10 @@ namespace CrocusoftLibrary.Controllers
                 return View(customUser);
             }
 
-            if(activeUserName == oldUserName)
+            //Check if a username to be updated belongs to a active user
+            if(activeUserName == userNameToBeUpdated)
             {
+                //Make the user signed in with a new username
                 await _signInManager.SignInAsync(customUserFromDb, true);
             }
 
@@ -172,8 +177,6 @@ namespace CrocusoftLibrary.Controllers
                 return NotFound();
             }
 
-            //IdentityUserRole<string> identityUserRole = _context.UserRoles.FirstOrDefault(ur => ur.UserId == customUser.Id);
-            //_context.UserRoles.Remove(identityUserRole);
             await _userManager.DeleteAsync(customUserFromDb);
             await _context.SaveChangesAsync();
 

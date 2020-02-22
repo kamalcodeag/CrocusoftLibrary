@@ -106,12 +106,12 @@ using CrocusoftLibrary.ViewModels;
             WriteLiteral("\r\n        </h5>\r\n    </div>\r\n    <hr />\r\n    <div class=\"col-12 mt-5\">\r\n        <h5>İşçini siyahıdan silməyə əminsinizmi ?</h5>\r\n        ");
             EndContext();
             BeginContext(514, 319, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b0cecaed3d8f4ec0a0e5cd05e773c8f7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c6045ddfc9324acca043db601855cf19", async() => {
                 BeginContext(625, 14, true);
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(639, 84, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f39992c06856435ead8c65cc1a451dd6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b9f1c655a58f4fafa4b6a77a3b76d950", async() => {
                     BeginContext(715, 4, true);
                     WriteLiteral("Xeyr");
                     EndContext();

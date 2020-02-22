@@ -31,6 +31,7 @@ namespace CrocusoftLibrary.Controllers
         }
         public async Task<IActionResult> Login()
         {
+            //Create default user("Admin") and roles("Admin", "İstifadəçi") if not existed while sending a request the page
             bool succeeded = await UserAndRole.DbInitializer(_userManager, _roleManager);
 
             if (succeeded == false)
@@ -73,8 +74,16 @@ namespace CrocusoftLibrary.Controllers
             return RedirectToAction("List", "Employee");
         }
 
-        public IActionResult Register()
+        public async Task<IActionResult> Register()
         {
+            //Create default user("Admin") and roles("Admin", "İstifadəçi") if not existed while sending a request the page
+            bool succeeded = await UserAndRole.DbInitializer(_userManager, _roleManager);
+
+            if (succeeded == false)
+            {
+                return NotFound();
+            }
+
             if (User.Identity.IsAuthenticated)
             {
                 return RedirectToAction("List", "Employee");

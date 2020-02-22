@@ -142,7 +142,7 @@ using CrocusoftLibrary.ViewModels;
             WriteLiteral("        <div class=\"col-12 mb-5\">\r\n            ");
             EndContext();
             BeginContext(596, 108, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8136d9bf006f4e659204368ef321be1f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f5008380b5c4bdc946e5f5f6506e7dc", async() => {
                 BeginContext(685, 15, true);
                 WriteLiteral("Yeni işçi yarat");
                 EndContext();
@@ -246,7 +246,7 @@ using CrocusoftLibrary.ViewModels;
             WriteLiteral("                                ");
             EndContext();
             BeginContext(1807, 175, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5f181b6477af4c6e99ee46eae23d197d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0909d019ec78495cbc5472ad7132a6c9", async() => {
                 BeginContext(1880, 98, true);
                 WriteLiteral("\r\n                                    <i class=\"fas fa-pen\"></i>\r\n                                ");
                 EndContext();
@@ -300,7 +300,7 @@ using CrocusoftLibrary.ViewModels;
             WriteLiteral("                                ");
             EndContext();
             BeginContext(2177, 186, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "90abafe89fb2457097f8ac160206ea84", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "052ccdc939c446079d6f63adcd3f1948", async() => {
                 BeginContext(2250, 109, true);
                 WriteLiteral("\r\n                                    <i class=\"fas fa-trash-alt ml-5\"></i>\r\n                                ");
                 EndContext();
@@ -357,7 +357,7 @@ using CrocusoftLibrary.ViewModels;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(2588, 93, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2bde076f4d714e0680bb767d757d55aa", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c9df8266316c4252af4974e56af65b35", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
